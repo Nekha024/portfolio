@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nekha A | Portfolio</title>
+<title>Nekha.A | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-/* ================= GLOBAL ================= */
 *{
     margin:0;
     padding:0;
@@ -23,7 +22,7 @@ body{
     color:white;
 }
 
-/* ================= NAV ================= */
+/* NAV */
 nav{
     position:fixed;
     top:0;
@@ -31,10 +30,10 @@ nav{
     display:flex;
     justify-content:space-between;
     padding:18px 10%;
-    background:rgba(15,23,42,0.7);
+    background:rgba(15,23,42,0.75);
     backdrop-filter:blur(12px);
-    z-index:1000;
     border-bottom:1px solid rgba(255,255,255,0.05);
+    z-index:1000;
 }
 
 nav .logo{
@@ -49,17 +48,16 @@ nav ul{
 }
 
 nav a{
-    text-decoration:none;
     color:white;
+    text-decoration:none;
     transition:0.3s;
 }
 
-nav a:hover,
-nav a.active{
+nav a:hover{
     color:#38bdf8;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 .hero{
     height:100vh;
     display:flex;
@@ -69,7 +67,7 @@ nav a.active{
 }
 
 .hero h1{
-    font-size:3.5rem;
+    font-size:3.6rem;
 }
 
 .hero span{
@@ -77,18 +75,19 @@ nav a.active{
 }
 
 .typing{
-    font-size:1.3rem;
-    color:#94a3b8;
     margin-top:10px;
+    font-size:1.2rem;
+    color:#94a3b8;
     height:30px;
 }
 
 .hero p{
-    color:#94a3b8;
-    max-width:600px;
     margin-top:10px;
+    color:#94a3b8;
+    max-width:650px;
 }
 
+/* BUTTONS */
 .btns{
     margin-top:20px;
 }
@@ -96,12 +95,12 @@ nav a.active{
 .btn{
     display:inline-block;
     padding:10px 18px;
-    margin-right:10px;
     border-radius:6px;
     background:#38bdf8;
     color:black;
     font-weight:600;
     text-decoration:none;
+    margin-right:10px;
 }
 
 .btn.outline{
@@ -110,17 +109,9 @@ nav a.active{
     color:#38bdf8;
 }
 
-/* ================= SECTIONS ================= */
+/* SECTIONS */
 section{
     padding:80px 10%;
-    opacity:0;
-    transform:translateY(40px);
-    transition:all 0.6s ease;
-}
-
-section.show{
-    opacity:1;
-    transform:translateY(0);
 }
 
 h2{
@@ -128,7 +119,7 @@ h2{
     margin-bottom:20px;
 }
 
-/* ================= SKILLS ================= */
+/* SKILLS */
 .skills{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
@@ -143,7 +134,7 @@ h2{
     border:1px solid rgba(255,255,255,0.05);
 }
 
-/* ================= PROJECTS ================= */
+/* PROJECTS */
 .projects{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -168,19 +159,14 @@ h2{
     margin:10px 0;
 }
 
-.project a{
-    color:#38bdf8;
-    text-decoration:none;
-}
-
-/* ================= CONTACT ================= */
-.contact-box{
+/* CONTACT */
+.contact{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
 
-input, textarea{
+input,textarea{
     width:100%;
     padding:10px;
     margin-top:10px;
@@ -191,7 +177,7 @@ input, textarea{
     color:white;
 }
 
-/* ================= FOOTER ================= */
+/* FOOTER */
 footer{
     text-align:center;
     padding:20px;
@@ -205,7 +191,7 @@ footer{
 
 <!-- NAV -->
 <nav>
-    <div class="logo">Nekha A</div>
+    <div class="logo">Nekha.A</div>
     <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -216,17 +202,17 @@ footer{
 
 <!-- HERO -->
 <section class="hero">
-    <h1>Hi, I'm <span>Nekha A</span></h1>
+    <h1>Hi, I'm <span>Nekha.A</span></h1>
 
     <div class="typing" id="typing"></div>
 
     <p>
-        MCA student passionate about Python, Django, AI/ML and building real-world scalable applications.
+        Junior Python Developer passionate about Django, AI systems, and building scalable web applications.
     </p>
 
     <div class="btns">
         <a href="#contact" class="btn">Hire Me</a>
-        <a href="#" class="btn outline">Download Resume</a>
+        <a href="https://github.com/Nekha024" target="_blank" class="btn outline">GitHub</a>
     </div>
 </section>
 
@@ -234,8 +220,8 @@ footer{
 <section id="about">
     <h2>About Me</h2>
     <p>
-        I am a dedicated software developer with strong interest in backend development, AI systems, and modern web applications.
-        I enjoy solving real-world problems using clean and scalable code.
+        I am a dedicated Junior Python Developer with strong interest in backend development using Django and building intelligent systems.
+        I enjoy creating clean, efficient, and scalable applications.
     </p>
 </section>
 
@@ -248,7 +234,7 @@ footer{
         <div class="skill">JavaScript</div>
         <div class="skill">HTML/CSS</div>
         <div class="skill">SQL</div>
-        <div class="skill">Machine Learning</div>
+        <div class="skill">AI/ML Basics</div>
     </div>
 </section>
 
@@ -260,14 +246,14 @@ footer{
 
         <div class="project">
             <h3>Digital Memory Forensics</h3>
-            <p>AI-based RAG system for forensic data analysis.</p>
-            <a href="#">GitHub →</a>
+            <p>AI-powered forensic analysis system using RAG and vector database techniques.</p>
+            <p><b>Tech:</b> Python, Django, RAG</p>
         </div>
 
         <div class="project">
             <h3>Learn Loop</h3>
-            <p>Career guidance platform with intelligent recommendations.</p>
-            <a href="#">GitHub →</a>
+            <p>Career guidance platform that suggests learning paths and skills.</p>
+            <p><b>Tech:</b> Python, Django, AI Logic</p>
         </div>
 
     </div>
@@ -277,11 +263,20 @@ footer{
 <section id="contact">
     <h2>Contact</h2>
 
-    <div class="contact-box">
+    <div class="contact">
+
         <div>
-            <p>Email: nekha.a03@gmail.com</p>
-            <p>LinkedIn: linkedin.com</p>
-            <p>GitHub: github.com</p>
+            <p><b>Email:</b> nekha.a03@gmail.com</p>
+            <p><b>LinkedIn:</b> 
+                <a href="https://www.linkedin.com/in/nekha-a-855249364" target="_blank" style="color:#38bdf8;">
+                    Profile
+                </a>
+            </p>
+            <p><b>GitHub:</b> 
+                <a href="https://github.com/Nekha024" target="_blank" style="color:#38bdf8;">
+                    Profile
+                </a>
+            </p>
         </div>
 
         <div>
@@ -290,57 +285,44 @@ footer{
             <textarea rows="4" placeholder="Message"></textarea>
             <button class="btn">Send</button>
         </div>
+
     </div>
 </section>
 
 <footer>
-    © 2026 Nekha A | Premium Portfolio
+    © 2026 Nekha.A | Junior Python Developer
 </footer>
 
 <script>
-/* ===== TYPING EFFECT ===== */
+/* typing effect */
 const texts = [
     "Junior Python Developer",
-    "Django Enthusiast",
-    "AI/ML Explorer"
+    "Django Developer",
+    "AI Enthusiast"
 ];
 
-let i = 0, j = 0;
-let current = "";
-let isDeleting = false;
+let i=0, j=0, current="", deleting=false;
 
 function type(){
     current = texts[i];
 
-    if(!isDeleting){
+    if(!deleting){
         document.getElementById("typing").innerHTML = current.substring(0,j++);
-        if(j > current.length){
-            isDeleting = true;
+        if(j>current.length){
+            deleting=true;
             setTimeout(type,1000);
             return;
         }
     }else{
         document.getElementById("typing").innerHTML = current.substring(0,j--);
-        if(j < 0){
-            isDeleting = false;
-            i = (i+1)%texts.length;
+        if(j<0){
+            deleting=false;
+            i=(i+1)%texts.length;
         }
     }
     setTimeout(type,100);
 }
 type();
-
-/* ===== SCROLL REVEAL ===== */
-const sections = document.querySelectorAll("section");
-
-window.addEventListener("scroll",()=>{
-    sections.forEach(sec=>{
-        const top = window.scrollY;
-        if(top + 600 > sec.offsetTop){
-            sec.classList.add("show");
-        }
-    });
-});
 </script>
 
 </body>
